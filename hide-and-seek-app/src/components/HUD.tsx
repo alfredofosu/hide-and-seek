@@ -1,3 +1,7 @@
+// HUD.tsx
+// Implements the Heads-Up Display for the game.
+// Shows game status, player info, score, and other relevant data.
+
 import React from "react";
 
 interface HUDProps {

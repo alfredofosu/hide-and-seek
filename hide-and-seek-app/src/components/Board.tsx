@@ -1,3 +1,7 @@
+// Board.tsx
+// Renders the main game board, including the room layout and interactive elements.
+// Handles drawing and user interactions within the game area.
+
 import React from "react";
 import type { Point, GameStatus, FurnitureItem, RoomProps } from "../types";
 import SvgDefs from "./SvgDefs";

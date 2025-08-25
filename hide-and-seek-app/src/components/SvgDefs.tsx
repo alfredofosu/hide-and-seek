@@ -1,3 +1,7 @@
+// SvgDefs.tsx
+// Contains reusable SVG definitions, such as gradients or patterns.
+// Used for styling SVG elements in the game.
+
 import React from 'react';
 
   const SvgDefs: React.FC = () => (

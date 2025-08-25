@@ -1,3 +1,7 @@
+// Furniture.tsx
+// Displays furniture items within the room.
+// Handles rendering and positioning of furniture objects on the board.
+
 import React from "react";
 import type { Rect } from "../types";
 

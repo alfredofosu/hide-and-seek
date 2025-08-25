@@ -1,3 +1,7 @@
+// Room.tsx
+// Renders the room structure and layout.
+// Manages the visual representation of the room in the game.
+
 import React from "react";
 import type { RoomProps } from "../types";
 

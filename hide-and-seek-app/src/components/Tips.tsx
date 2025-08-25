@@ -1,3 +1,7 @@
+// Tips.tsx
+// Displays gameplay tips or hints to the player.
+// Provides helpful information or instructions during
+
 import React from "react";
 
 const Tips: React.FC = () => (

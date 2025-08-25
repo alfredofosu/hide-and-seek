@@ -1,19 +1,29 @@
-import React from 'react';
-  import type { GameStatus } from '../types';
+// Controls.tsx
+// Provides UI controls for the game, such as buttons for starting, pausing, or resetting.
+// Manages user input for game actions.
 
-  interface ControlsProps {
-    status: GameStatus;
-    onStart: () => void;
-    onReset: () => void;
-  }
+import React from "react";
+import type { GameStatus } from "../types";
 
-  const Controls: React.FC<ControlsProps> = ({ status, onStart, onReset }) => (
-    <div className="d-flex gap-2">
-      <button onClick={onStart} disabled={status === 'counting'} className="btn btn-success">
-        {status === 'counting' ? 'Running…' : 'Start'}
-      </button>
-      <button onClick={onReset} className="btn btn-secondary">Reset</button>
-    </div>
-  );
+interface ControlsProps {
+  status: GameStatus;
+  onStart: () => void;
+  onReset: () => void;
+}
 
-  export default Controls;
+const Controls: React.FC<ControlsProps> = ({ status, onStart, onReset }) => (
+  <div className="d-flex gap-2">
+    <button
+      onClick={onStart}
+      disabled={status === "counting"}
+      className="btn btn-success"
+    >
+      {status === "counting" ? "Running…" : "Start"}
+    </button>
+    <button onClick={onReset} className="btn btn-secondary">
+      Reset
+    </button>
+  </div>
+);
+
+export default Controls;
